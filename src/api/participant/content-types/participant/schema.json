@@ -8,7 +8,7 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
@@ -19,16 +19,21 @@
       "type": "string"
     },
     "Day_1": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Day_2": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "events": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::event.event",
       "mappedBy": "participants"
+    },
+    "Contact": {
+      "type": "biginteger"
     }
   }
 }
